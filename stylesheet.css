@@ -1,0 +1,181 @@
+/* PROJ 3 */
+.proj3-bod {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: none;  /* IE and Edge */
+ 	scrollbar-width: none; 
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.proj3-bod::-webkit-scrollbar {
+  display: none;
+}
+
+
+.items {
+	width: 100vw;
+}
+/* Images */
+.items img   {
+	position: absolute;
+	background-color: #f000 !important;
+	height: 100vh;
+	/* top: 0; */
+	transition-timing-function: ease-in-out;
+}
+
+.present {
+	left: 150vw;
+	transition: transform 3s;
+}
+
+
+.p3-buttons img {
+	height: 15vh;
+	max-height: 20vw;
+	/* max-width: 10vw; */
+	/* min-width: 25%; */
+	z-index: 98;
+	bottom: -20vw;
+	margin: 0 1vw 0 1vw;
+	position: absolute;
+	opacity: .6;
+	background-color: transparent;
+	transition: opacity 1s, margin-bottom 1s, transform 4s;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.forward {
+	right: 1vw;
+}
+
+#back {
+	left: 1vw;
+}
+
+.p3-buttons img:hover {
+	opacity: 1;
+	/* width: 51vh;s */
+	margin-bottom: 2vh;
+}
+
+
+.black {
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	position: absolute;
+	visibility: hidden;
+}
+
+#black-screen {
+	z-index: 99;
+	transition: opacity 3s;
+}
+
+#black-bg {
+	z-index: 0;
+}
+
+
+/* START */
+#start {
+	position: absolute;
+	/* left: calc(-15vh * 3.5); */
+	left: calc(30vw - 115vh);
+}
+
+.warning {
+	top: -100vh;
+	/* right: -100vw; */
+	opacity: 0;
+	transition: transform 5s, opacity 9s;
+}
+
+.start {
+	transition: transform 4s;
+}
+
+/* TV */
+#tv1 {
+	position: absolute;
+	left: calc(49vw - 115vh);
+}
+
+#tv2 {
+	position: absolute;
+	left: calc(49vw - 115vh);
+}
+
+/* SHROOMS */
+#shrooms1 {
+	position: absolute;
+	left: calc(51vw - 115vh);
+}
+
+#shrooms2 {
+	position: absolute;
+	left: calc(48vw - 119vh);
+}
+
+.shrooms {
+	transition: transform 20s;
+}
+
+/* DOOR */
+#door1 {
+	position: absolute;
+	left: calc(49vw - 115vh);
+}
+
+#door2 {
+	position: absolute;
+	left: calc(49vw - 115vh);
+}
+
+/* PHONE */
+#phone1 {
+	position: absolute;
+	left: calc(49vw - 115vh);
+}
+
+#phone2 {
+	position: absolute;
+	left: calc(49vw - 115vh);
+}
+
+/* END */
+#end1 {
+	position: absolute;
+	left: calc(49vw - 110vh);
+}
+
+#bubble {
+	opacity: 0;
+	transition: opacity 4s;
+}
+
+.hand {
+	left: calc(49vw - 118vh);
+	bottom: -70vh;
+	transition: transform 10s;
+}
+
+#overwhelm {
+	position: absolute;
+	bottom: 20vh;
+	left: calc(49vw - 60vh);
+	height: 75vh;
+	transition: transform 30s;
+}
+
+#overwhelmb {
+	position: absolute;
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+}
